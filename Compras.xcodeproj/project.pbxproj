@@ -13,9 +13,12 @@
 		B86A6D501E26DD8B008EFD86 /* Compras.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B86A6D4E1E26DD8B008EFD86 /* Compras.xcdatamodeld */; };
 		B86A6D521E26DD8B008EFD86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86A6D511E26DD8B008EFD86 /* Assets.xcassets */; };
 		B86A6D551E26DD8B008EFD86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86A6D531E26DD8B008EFD86 /* LaunchScreen.storyboard */; };
+		C74A8331C19CD06C0F6112EB /* Pods_Compras.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CB30FCA546D2369639799C /* Pods_Compras.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69CA558306581DB5657F338F /* Pods-Compras.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Compras.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Compras/Pods-Compras.debug.xcconfig"; sourceTree = "<group>"; };
+		70CB30FCA546D2369639799C /* Pods_Compras.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Compras.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86A6D441E26DD8B008EFD86 /* Compras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86A6D471E26DD8B008EFD86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86A6D491E26DD8B008EFD86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		B86A6D511E26DD8B008EFD86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B86A6D541E26DD8B008EFD86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B86A6D561E26DD8B008EFD86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE26061DBBAAFA2A884CABF7 /* Pods-Compras.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Compras.release.xcconfig"; path = "Pods/Target Support Files/Pods-Compras/Pods-Compras.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74A8331C19CD06C0F6112EB /* Pods_Compras.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				B86A6D461E26DD8B008EFD86 /* Compras */,
 				B86A6D451E26DD8B008EFD86 /* Products */,
+				D73379C661DB7FE94E412AD5 /* Pods */,
+				C6B693C739D7C189A6832350 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = Compras;
 			sourceTree = "<group>";
 		};
+		C6B693C739D7C189A6832350 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70CB30FCA546D2369639799C /* Pods_Compras.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D73379C661DB7FE94E412AD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69CA558306581DB5657F338F /* Pods-Compras.debug.xcconfig */,
+				CE26061DBBAAFA2A884CABF7 /* Pods-Compras.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B86A6D591E26DD8B008EFD86 /* Build configuration list for PBXNativeTarget "Compras" */;
 			buildPhases = (
+				9DAC894023CCB55F5E5B445A /* [CP] Check Pods Manifest.lock */,
 				B86A6D401E26DD8B008EFD86 /* Sources */,
 				B86A6D411E26DD8B008EFD86 /* Frameworks */,
 				B86A6D421E26DD8B008EFD86 /* Resources */,
+				A6ABEDDF78CCDB36BC122168 /* [CP] Embed Pods Frameworks */,
+				F23DC5813A5AD96090E0C3AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DAC894023CCB55F5E5B445A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6ABEDDF78CCDB36BC122168 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Compras/Pods-Compras-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F23DC5813A5AD96090E0C3AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Compras/Pods-Compras-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B86A6D401E26DD8B008EFD86 /* Sources */ = {
@@ -263,6 +338,7 @@
 		};
 		B86A6D5A1E26DD8B008EFD86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69CA558306581DB5657F338F /* Pods-Compras.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D87V2YB89W;
@@ -276,6 +352,7 @@
 		};
 		B86A6D5B1E26DD8B008EFD86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE26061DBBAAFA2A884CABF7 /* Pods-Compras.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D87V2YB89W;
